@@ -15,6 +15,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(140, 142, 145);
         }
 
         td, th{
@@ -24,63 +32,89 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(30, 31, 31);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(140, 142, 145);
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(140, 142, 145);
+        }
+
+        td.num {
+            text-align: right;
         }
     </style>
     <table>
+        <caption>Os 10 Maiores Estados do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>46 081 801</td>
+                <td class="num">46.081.801</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21 393 441</td>
+                <td class="num">21.393.441</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17.223.547</td>
+                <td class="num">17.223.547</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td>14.870.907</td>
+                <td class="num">14.870.907</td>
             </tr>
             <tr>
             <td>Paraná</td>
-            <td>11.890.517</td>    
+            <td class="num">11.890.517</td>    
             </tr>
             <td>Rio Grande do Sul</td>
-            <td>11.233.263 </td>
+            <td class="num">11.233.263 </td>
             <tr>
                 <td>Pernambuco </td>
-                <td> 9.562.007</td>
+                <td class="num"> 9.562.007</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td>9.268.836</td>
+                <td class="num">9.268.836</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td> 8.711.196 </td>
+                <td class="num"> 8.711.196 </td>
             </tr>
             <tr>
                 <td>Santa Catarina</td>
-                <td>8.187.029</td>
+                <td class="num">8.187.029</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"> <strong>147.189.281</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perferendis earum aperiam officiis dolorum a laboriosam incidunt nobis totam itaque, id enim magnam minus nisi quod, eaque consequuntur suscipit vitae!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni quia explicabo, vel quos rem ab recusandae quod excepturi unde? Iure architecto, fugit modi ipsam nam magni eos eveniet fuga eum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sint cupiditate maiores consequatur nulla obcaecati. Sit tempora, ea quis deleniti quo ut rerum dolor nostrum accusamus ullam distinctio, suscipit maxime?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sit sint, voluptatum ea iure officia modi. 
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolores inventore ut natus, at fugiat numquam error ad excepturi, eum, est sit vero culpa quia corrupti consequuntur voluptates? Necessitatibus, optio.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quia hic laudantium inventore non, at molestiae saepe nobis alias velit voluptas porro, ex libero optio? Recusandae est facilis nulla dolorem!
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, reprehenderit perferendis, perspiciatis autem reiciendis incidunt aperiam ab exercitationem recusandae illum ullam enim! Vero, eius officiis nisi itaque magni beatae cum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cumque ratione itaque corrupti, error reiciendis dolores inventore enim nihil aliquid rem quisquam eos voluptatibus obcaecati? Ratione voluptatem hic quidem libero.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, vero nostrum, excepturi quas, accusamus quam suscipit quo ipsum ea facere modi nesciunt? Quos quasi debitis ipsam aperiam, ex aspernatur autem!</p>
 </body>
 </html>
